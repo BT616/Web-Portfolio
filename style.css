@@ -61,9 +61,8 @@ a {
 }
 
 .header div ul li {
-    
-    display: inline-flex;
     margin-left: 25px;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -73,7 +72,7 @@ p {
     
     font-size: 16px;
     text-align: Center;
-    text-align: justify;
+    text-align: justify; 
     font-size:20px
 }
 
@@ -89,7 +88,7 @@ a:hover{
 span[data-descr] {
     position: relative;
     text-decoration: underline;
-    color: white;
+    color: green;
     cursor: grab;
   }
 
@@ -123,54 +122,50 @@ span[data-descr] {
 
 
 .bio {
- 
+    max-width: 100%;
     margin-bottom: 20px;
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
     background-color:black;
     color: #ffffff;
-    border-style: solid;
     flex-direction: column;
 }
 
 .work {
-    
+    max-width: 100%;
     margin-bottom: 20px;
-    padding: 20px;
-    height: 300px;
+    padding: 50px;
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     color: #ffffff;
-    border-style: solid;
     flex-direction: column;
+  
 }
 
 .contact {
-    
+    max-width: 100%;
     margin-bottom: 20px;
-    padding: 20px;
-    height: 300px;
+    padding: 50px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #050607;
     color: #ffffff;
-    border-style: solid;
    flex-direction: column;
 
 }
 
 
 .bio img {
-    position: relative;
+    display:block;
     max-width: 200px;
 }
 
 .work img {
-    position:relative;
+    display:block;
     max-width: 200px;
 }
 
 .contact img {
-    position:relative;
+    display:block;
     max-width: 200px;
 }
 
