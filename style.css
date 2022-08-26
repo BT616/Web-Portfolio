@@ -123,16 +123,18 @@ span[data-descr] {
 
 
 .bio {
+ 
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
     font-family: 'Courier New', Courier, monospace;
     background-color:black;
     color: #ffffff;
     border-style: solid;
+    flex-direction: column;
 }
 
 .work {
+    
     margin-bottom: 20px;
     padding: 20px;
     height: 300px;
@@ -140,10 +142,11 @@ span[data-descr] {
     background-color: black;
     color: #ffffff;
     border-style: solid;
-    
+    flex-direction: column;
 }
 
 .contact {
+    
     margin-bottom: 20px;
     padding: 20px;
     height: 300px;
@@ -151,23 +154,24 @@ span[data-descr] {
     background-color: #050607;
     color: #ffffff;
     border-style: solid;
-    font-display: center;
-   
+   flex-direction: column;
 
 }
-
 
 
 .bio img {
-    max-height: 200px;
+    position: relative;
+    max-width: 200px;
 }
 
 .work img {
-    max-height: 200px;
+    position:relative;
+    max-width: 200px;
 }
 
 .contact img {
-    max-height: 200px;
+    position:relative;
+    max-width: 200px;
 }
 
 .bio h2 {
