@@ -4,34 +4,43 @@
     margin: 0;
 }
 
-body {
+:root{
+    --color:rgb(54, 119, 172);
+    --background-color:#d9dcd6;
+
+}
+
+.body {
     background-color: #d9dcd6;
 }
 
 .header {
-   
     display:flex;
     flex-wrap:wrap;
-    padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #01080b;
+    background-color: grey;
     color: #ffffff;
 }
 
 .header h1 {
     display: inline-block;
     flex-wrap: wrap;
+    padding-left:100px;
+    margin-top:10px;
+    margin-bottom: 10px;
     justify-content: space-between;
     font-size: 48px;
+    background-color: var(--color);
+  
 }
 
 
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+    padding-top: 20px;
+    padding-left: 50%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    text-decoration:underline;
 }
 
 .header div ul {
@@ -40,9 +49,8 @@ body {
 
 
 .hero {
-    height: 800px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("https://images.unsplash.com/photo-1612740722203-ba65e8877d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     background-size: cover;
     background-position: center;
@@ -69,21 +77,15 @@ a {
 }
 
 p {
-    
-    font-size: 16px;
-    text-align: Center;
-    text-align: justify; 
     font-size:20px
 }
+
+
+
 
 a:hover{
     color:red;
 }
-
-
-
-
-
 
 span[data-descr] {
     position: relative;
@@ -119,62 +121,68 @@ span[data-descr] {
     margin-left: 25px;
 }
 
+.container{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    background-color: #050607;
+    padding:10px;
+   
 
-
-.bio {
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color:black;
-    color: #ffffff;
-    flex-direction: column;
 }
 
-.work {
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    color: #ffffff;
-    flex-direction: column;
-  
-}
-
-.contact {
-    max-width: 100%;
+.about-me {
     margin-bottom: 20px;
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #050607;
     color: #ffffff;
-   flex-direction: column;
+    border-right:2px solid white;
+   
+}
+
+.work {
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #050607;
+    color: #ffffff;
+    border-right:2px solid white;
+}
+
+.contact {
+   
+   
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #050607;
+    color: #ffffff;
+   
 
 }
 
-
-.bio img {
-    display:block;
-    max-width: 200px;
+.about-me p{
+    text-align: left;
 }
+
+
 
 .work img {
-    display:block;
     max-width: 200px;
 }
 
 .contact img {
-    display:block;
     max-width: 200px;
 }
 
-.bio h2 {
+.about-me h2 {
+    text-align:right;
     margin-bottom: 20px;
     font-size: 36px;
 }
 
 .work h2 {
+    text-align: right;
     margin-bottom: 20px;
     font-size: 36px;
 }
