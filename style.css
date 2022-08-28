@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
    
+   
 }
 
 :root{
@@ -10,9 +11,8 @@
     --background-color:rgb(105, 174, 195);
 
 }
-
-.body {
-    background-color: #d9dcd6;
+body{
+    background-color: #d4bbda;
 }
 
 .header {
@@ -24,11 +24,11 @@
 }
 
 .header h1 {
- 
     padding-left:100px;
     padding-right: 10px;
     margin-top:10px;
     margin-bottom: 10px;
+    margin-right:40%;
     font-size: 48px;
     background-color: rgb(105, 174, 195);;
   
@@ -46,17 +46,21 @@
 }
 
 .header div ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 10px;
-    
- 
+   display: inline-block;
+    margin-left: 25px; 
 }
 
+p{
+    font-size:40px 
+}
 
+h3{
+    font-size: 50px;
 
+}
 
 .hero {
+    position:relative;
     height: 300px;
     width: 100%;
     background-image: url("https://images.unsplash.com/photo-1612740722203-ba65e8877d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
@@ -64,6 +68,7 @@
     background-position: center;
     display:flex;
     flex-wrap: wrap;
+
 }
 
 a {
@@ -89,13 +94,15 @@ a:hover{
 
 
 
-p {
-    padding-left: 10px;
-    padding-top: 5%;
-    font-size:20px
-    
+.text{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(105, 174, 195);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
 }
-
 
 
 
@@ -125,12 +132,18 @@ span[data-descr] {
 
 
 
-.color{
+
+
+
+  .size {
+    
+    padding-left: 10px;
+    padding-top: 2%;
+    margin: 10px;
+    font-size:40px;
     color: rgb(105, 174, 195);
+
 }
-
-
-
 
 
 .container{
@@ -143,37 +156,49 @@ span[data-descr] {
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
-    color: rgb(105, 174, 195);
-    border-right:2px solid rgb(105, 174, 195);
+    color: rgb(67, 113, 127);
+    border-right:5px solid rgb(105, 174, 195);
    
 }
+
+
 
 
 .work {
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
-    background-color: #d9dcd6;
-    color: #ffffff;
+    color: rgb(67, 113, 127);
+    border-right:5px solid rgb(105, 174, 195);
     
 }
 
 .contact {
-   
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
-    background-color: #d9dcd6;
-    color: #ffffff;
-   
-
+    color: rgb(67, 113, 127);
+    border-right:5px solid rgb(105, 174, 195);
 }
 
 .box{
     display:flex;
     flex-wrap: wrap;
 }
+
+.text-block{
+    position:absolute;
+    bottom:50px;
+    left:5px;
+    width:200px;
+    background-color:rgb(105, 174, 195);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+}
+
 .column {
+    position: relative;
     padding: 2px 16px;
     display:flex;
     flex-wrap: wrap;
@@ -181,6 +206,12 @@ span[data-descr] {
 .card-main{
     margin: 10px 10px 10px 10px;
 }
+
+img:hover{
+    opacity: .5;
+    color: #13293d;
+}
+
 
 .card-main img{
     width:100%;
@@ -201,16 +232,27 @@ span[data-descr] {
 
 
 .about-me h2 {
-    display: inline-block;
+    display: absolute;
     text-align:right;
-    margin-bottom: 20px;
     font-size: 45px;
     font-size:4.5vw;
 }
-   
+.work h2 {
+    display: absolute;
+    text-align:right;
+    font-size: 45px;
+    font-size:4.5vw;
+    
+}  
 
 
-
+.contact h2{
+    display: absolute;
+    text-align:right;
+    font-size: 45px;
+    font-size:4.5vw;
+    
+}
 
 
 
