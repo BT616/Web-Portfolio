@@ -12,7 +12,7 @@
 
 }
 body{
-    background-color: #d4bbda;
+    background-color: hsl(238, 42%, 88%);
 }
 
 .header {
@@ -30,7 +30,7 @@ body{
     margin-bottom: 10px;
     margin-right:40%;
     font-size: 48px;
-    background-color: rgb(105, 174, 195);;
+    background-color: var(--background-color);
   
 }
 
@@ -41,6 +41,9 @@ body{
     font-family: 'Arial', Courier, monospace;
     font-size: 30px;
 }
+
+
+/* Hover effect in red */
 .header div li:hover{
     color:red;
 }
@@ -58,7 +61,7 @@ h3{
     font-size: 50px;
 
 }
-
+/* hero element is the giant photo that should be in the center, made it small and wide for a banner feel*/
 .hero {
     position:relative;
     height: 300px;
@@ -71,16 +74,20 @@ h3{
 
 }
 
+
+/* this gives our links a color but removes the underline from the nav element*/
 a {
-    color: rgb(105, 174, 195);
+    color: var(--background-color);
     text-decoration: none;
 }
+
+/*when you hover over words with url it changes color*/
 a:hover{
     color:red;
 }
 
 
-
+/* links at the bottom of the page layout */
 .links ul li {
     text-decoration: underline;
     margin: 50px;
@@ -93,12 +100,12 @@ a:hover{
 }
 
 
-
+/* this is the text over the hero photo thats like a banner*/
 .text{
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(105, 174, 195);
+    background-color: var(--background-color);
     color:white;
     padding-left:20px;
     padding-right:20px;
@@ -107,11 +114,11 @@ a:hover{
 
 
 
-
+/* makes the pop up on hover in the about me*/
 span[data-descr] {
     position: relative;
     text-decoration: underline;
-    color: green;
+    color: rgb(33, 30, 204);
     cursor: grab;
   }
 
@@ -134,109 +141,119 @@ span[data-descr] {
 
 
 
-
+/* this is the layout for the "p" in the about me*/
   .size {
-    
     padding-left: 10px;
     padding-top: 2%;
     margin: 10px;
     font-size:40px;
-    color: rgb(105, 174, 195);
+    color: var(--background-color);
 
 }
 
-
+/*layout for the cards i think using <align> wouldve worked as well */
 .container{
     display:grid;
     grid-template-columns: 25% 75%;
     padding:10px;
 }
 
+/* about me sidebard card */
 .about-me {
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
     color: rgb(67, 113, 127);
-    border-right:5px solid rgb(105, 174, 195);
+    border-right:5px solid var(--background-color);
    
 }
 
 
 
-
+/* work sidebar card  */
 .work {
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
     color: rgb(67, 113, 127);
-    border-right:5px solid rgb(105, 174, 195);
+    border-right:5px solid var(--background-color);
     
 }
-
+/* contact me sidebar card */
 .contact {
     margin-bottom: 20px;
     padding: 30px;
     font-family: 'Arial', Courier, monospace;
     color: rgb(67, 113, 127);
-    border-right:5px solid rgb(105, 174, 195);
+    border-right:5px solid var(--background-color);
 }
 
+/* box is the divide for the cards/photos to go in */
 .box{
     display:flex;
     flex-wrap: wrap;
 }
 
+/*text-block is the text that goes over the photos that are in the work area*/
 .text-block{
     position:absolute;
     bottom:50px;
     left:5px;
     width:200px;
-    background-color:rgb(105, 174, 195);
+    background-color:var(--background-color);;
     color:white;
     padding-left:20px;
     padding-right:20px;
 }
 
+/* this is the text and the text-border in the cards*/
 .column {
     position: relative;
-    padding: 2px 16px;
-    display:flex;
-    flex-wrap: wrap;
+    padding: 5px 16px;
+   
   }
+
+  /* this is the larger card for the work area*/
 .card-main{
     margin: 10px 10px 10px 10px;
 }
 
+/*hover effect for the images on the page*/
 img:hover{
     opacity: .5;
     color: #13293d;
 }
 
-
+/*big photo size*/
 .card-main img{
     width:100%;
     height:100%;
-    border: 5px solid rgb(105, 174, 195);
+    border: 5px solid var(--background-color);
 }
 
+/* spacing of the cards which are the photos */
 .card{
     margin: 10px 10px 10px 10px; 
 }
+
+/*shape of the photos and the border effect in work*/
 .card img{
     max-width:100%;
     width:430px;
     height:200px;
-    border: 5px solid rgb(105, 174, 195);
+    border: 5px solid var(--background-color);
 }
 
 
-
+/*header for the text in the about me*/
 .about-me h2 {
     display: absolute;
     text-align:right;
     font-size: 45px;
     font-size:4.5vw;
 }
+
+/*header for work in the sidebar*/
 .work h2 {
     display: absolute;
     text-align:right;
@@ -245,7 +262,7 @@ img:hover{
     
 }  
 
-
+/*contact text in the sidebar*/
 .contact h2{
     display: absolute;
     text-align:right;
@@ -256,7 +273,7 @@ img:hover{
 
 
 
-
+/* bottom of the page text */
 .footer {
     padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
